@@ -1,0 +1,19 @@
+const mongoose = require('mongoose');
+
+let dataSchema = mongoose.Schema({
+    
+    'pname': {
+        required: true,
+        type : String
+    },
+    'pprice': {
+        required: true,
+        type : String
+    },
+    'pdetails': {
+        required: true,
+        type : String
+    }
+});
+
+module.exports = mongoose.model("node_js",dataSchema);
