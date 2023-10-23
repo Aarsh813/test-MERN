@@ -5,7 +5,7 @@ const cors = require("cors");
 
 const Product = require('./product');
 const DB = 'mongodb+srv://Aarsh:Aarsh"12"@cluster0.91ortpx.mongodb.net/?retryWrites=true&w=majority';
-const PORT = 46390;
+const PORT = process.env.PORT || 3000;
 
 //middleware
 app.use(express.json());
