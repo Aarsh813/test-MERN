@@ -1,14 +1,11 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const mongodb = require("mongodb");
-const product = require("../lib/node_old/product");
 const app = express();
 const cors = require("cors");
 
-const productData = [];
 const Product = require('./product');
 const DB = 'mongodb+srv://Aarsh:Aarsh"12"@cluster0.91ortpx.mongodb.net/?retryWrites=true&w=majority';
-const PORT = 2000;
+const PORT = 46390;
 
 //middleware
 app.use(express.json());
